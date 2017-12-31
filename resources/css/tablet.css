@@ -1,0 +1,18 @@
+/* Tablet */
+html,
+body {
+  font-size: 16px;
+}
+
+.container {
+  min-width: 1024px;
+  margin: 0 auto;
+}
+
+.site {
+  float: left;
+}
+
+.new-arrival {
+  float: left;
+}

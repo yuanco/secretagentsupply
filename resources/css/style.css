@@ -17,6 +17,12 @@ body {
   background-color: black;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .container {
   min-width: 960px;
   margin: 0 auto;
@@ -28,20 +34,30 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .header {
+  background-color: #404040;
+  width: 100%;
+  margin: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .site {
-  height: 2.5rem;
-  font-size: 1rem;
-  color: white;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.name {
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -50,11 +66,13 @@ body {
 
 .logo {
   height: 1.5rem;
+  width: auto;
   margin-left: 0.5rem;
   margin-right: 1rem;
 }
 
 #title {
+  color: white;
   font-size: 1rem;
   margin-top: 0.66rem;
   margin-bottom: 0.66rem;
@@ -63,18 +81,20 @@ body {
 .window-container {
   height: 25rem;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   background-image: url("../img/moto.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .window {
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
@@ -87,7 +107,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+
 }
 
 #new-1 {
@@ -111,13 +131,14 @@ body {
   width: 100%;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .links {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -129,16 +150,18 @@ body {
 }
 
 .content {
+  margin-top: 3rem;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .items {
-  margin-top: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -170,12 +193,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/*div img {
-  height: 9rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}*/
 
 #pen {
   background-image: url("../img/pen.png");
@@ -221,19 +238,22 @@ body {
 
 #iii {
   text-align: left;
-  margin-bottom: 4rem;
 }
 
 .footer {
   background-color: black;
   height: 5rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
+  margin-top: 4rem;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 
-#iv {
-  text-align: left;
-}
+
+/* Media Query */
+/*@media only screen and (max-width: 1024px) and (min-width: 470px) {
+
+}*/

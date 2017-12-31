@@ -157,15 +157,48 @@ body {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .item-pic {
   height: 9rem;
-  width: auto;
+  width: 9rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+/*div img {
+  height: 9rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}*/
+
+#pen {
+  background-image: url("../img/pen.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+#watch {
+  background-image: url("../img/watch.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-position: center center;
+}
+
+#glasses {
+  background-image: url("../img/glasses.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
 
 .text-container {
   background-color: black;

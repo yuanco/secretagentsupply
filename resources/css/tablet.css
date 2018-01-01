@@ -4,15 +4,28 @@ body {
   font-size: 16px;
 }
 
-.container {
-  min-width: 1024px;
-  margin: 0 auto;
+.nav-container {
+
 }
 
-.site {
-  float: left;
+nav ul {
+  max-height: 0;
 }
 
-.new-arrival {
-  float: left;
+/*
+.showing {
+  max-height: 2.5rem;
+}*/
+
+.handle {
+  display: block;
+}
+
+.large-box {
+  width: 47%;
+  height: auto;
+}
+
+#thermal-glasses {
+  display: none;
 }

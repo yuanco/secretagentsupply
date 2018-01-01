@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
     <link rel="stylesheet" media="screen and (max-width: 1024px)" href="resources/css/tablet.css" type="text/css" >
     <link rel="stylesheet" media="screen and (max-width: 470px)" href="resources/css/mobile.css" type="text/css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
 
@@ -34,63 +35,69 @@
       <div class="nav-container">
         <nav class="container">
           <ul class="links">
-            <li>Eyewear</li>
-            <li>Apparel</li>
-            <li>Gadgets</li>
-            <li>Vehicles</li>
-            <li>Classeses</li>
-            <li>Contact</li>
+            <li><a href="#">Eyewear</a></li>
+            <li><a href="#">Apparel</a></li>
+            <li><a href="#">Gadgets</a></li>
+            <li><a href="#">Vehicles</a></li>
+            <li><a href="#">Classeses</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
+          <div class="handle">Menu</div>
         </nav>
       </div>
-
 
     <!-- Content -->
     <div class="content">
       <div class="items container">
-        <div class="large-box">
+        <div class="large-box" id="exploding-pen">
           <div class="item-pic" id="pen"></div>
           <div class="text-container">
-            <p class="white-text" id="i">Exploding Pen</p>
+            <p class="white-text item-name">Exploding Pen</p>
           </div>
         </div>
 
-        <div class="large-box">
+        <div class="large-box" id="cellular-watch">
           <div class="item-pic" id="watch"></div>
           <div class="text-container">
-            <p class="white-text" id="i">Cellular Watch</p>
+            <p class="white-text item-name">Cellular Watch</p>
           </div>
         </div>
 
-        <div class="large-box">
+        <div class="large-box" id="thermal-glasses">
           <div class="item-pic" id="glasses"></div>
           <div class="text-container">
-            <p class="white-text" id="i">Thermal Glasses</p>
+            <p class="white-text item-name">Thermal Glasses</p>
           </div>
         </div>
 
-        <div class="small-box">
+        <div class="small-box" id="locations">
           <div class="text-container">
-            <p class="white-text" id="ii">Location</p>
+            <p class="white-text operation" >Location</p>
           </div>
-          <p class="black-text" id="iii">-47.346436, 84.32354</p>
+          <p class="black-text operation-value">-47.346436, 84.32354</p>
         </div>
 
-        <div class="small-box">
+        <div class="small-box" id="hours">
           <div class="text-container">
-            <p class="white-text" id="ii">Hours</p>
+            <p class="white-text operation">Hours</p>
           </div>
-          <p class="black-text" id="iii">0800 - 1800</p>
+          <p class="black-text operation-value">0800 - 1800</p>
         </div>
       </div>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <div class="container">
+        <div class="container" id="copyright">
           <p class="white-text">Copyright Secrect Agent Supply Inc.</p>
         </div>
     </div>
 
+    <!-- Script -->
+    <script>
+      $('.handle').on('click', function() {
+        $('nav ul').toggleClass('showing');
+      });
+    </script>
   </body>
 </html>

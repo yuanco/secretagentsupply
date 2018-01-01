@@ -1,5 +1,86 @@
 /* Mobile */
+/* Tablet */
 html,
 body {
-  font-size: 12px;
+  font-size: 16px;
+}
+
+.window-container {
+  height: 15rem;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../img/moto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.new-arrival {
+  height: auto;
+  width: 100%;
+  border: none;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#new-1 {
+  font-size: 0.77rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+#new-2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+nav ul {
+  max-height: 0;
+}
+
+.showing {
+  max-height: 20rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.large-box {
+  width: 90%;
+}
+
+.small-box {
+  width: 90%;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#cellular-watch {
+  display: none;
+}
+
+#hours {
+  margin-top: 0.5rem;
+}
+
+#copyright {
+  text-align: center;
 }

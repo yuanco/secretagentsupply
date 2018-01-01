@@ -3,6 +3,7 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   margin: 0;
+  padding: 0;
 }
 
 .white-text {
@@ -13,8 +14,8 @@ body {
   color: black;
 }
 
-.black-background {
-  background-color: black;
+.background_gray {
+  background-color: #404040;
 }
 
 .main {
@@ -24,22 +25,14 @@ body {
 }
 
 .container {
-  min-width: 960px;
+  width: 960px;
   margin: 0 auto;
+  float: left;
 }
 
-.header-container {
-  background-color: #404040;
-  width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
 
 .header {
-  background-color: #404040;
+  background-color: black;
   width: 100%;
   margin: 0;
   display: flex;
@@ -100,14 +93,13 @@ body {
 }
 
 .new-arrival {
+  background-color: black;
   height: 10rem;
   width: 25rem;
   border: 1px solid white;
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
 }
 
 #new-1 {
@@ -136,6 +128,12 @@ body {
   align-items: center;
 }
 
+nav ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -144,10 +142,32 @@ body {
 }
 
 .links li {
+
+}
+
+.links li:hover {
+  background: lightblue;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  display: inline-block;
+}
+
+.handle {
+  width: 100%;
+  background-color: inherit;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
   color: white;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+  display: none;
 }
+
 
 .content {
   margin-top: 3rem;
@@ -223,20 +243,20 @@ body {
   height: auto;
 }
 
-#i {
+.item-name {
   text-align: center;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-#ii {
+.operation {
   text-align: left;
   margin-left: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-#iii {
+.operation-value {
   text-align: left;
 }
 
